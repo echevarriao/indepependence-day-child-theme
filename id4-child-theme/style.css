@@ -1,0 +1,146 @@
+/*
+ *
+
+Theme Name: School of Engineering Independence Day Child Theme
+Theme URI: http://www.engr.uconn.edu/
+Author: School of Engineering Communications Group
+Author URI: http://www.engr.uconn.edu/
+Template: independence-day-theme
+Description: The School of Engineering Independence Day child theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, three-columns right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: independence-day
+
+This child theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+ *
+ */
+
+div.white-links-container > div > p,  div.white-links-container > div > h1{
+	
+	text-transform: uppercase;
+	
+}
+
+#white-headers div > div > p, #white-headers div > div > h1  {
+	
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+
+ul.grid {
+
+list-style: none;
+margin: 0;
+padding: 0;
+
+}
+
+ul.grid {
+  column-count: 4;
+  column-gap: 10px;
+}
+
+li.grid-item {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+ul.container li.grid-item img {
+  max-width: 100%;
+  display: block;
+}
+
+li.grid-item > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+li.grid-item a {
+  color: black;
+  text-decoration: none;
+}
+
+p.item-caption {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: rgba(255,255,255,.5);
+  padding: .2em .5em;
+  justify-self: start;
+}
+
+
+@media screen and (max-width: 1024px){
+	
+	ul.grid {
+  column-count: 3;
+  column-gap: 10px;
+}
+	
+	#white-headers div > div > p, #white-headers div > div > h1, #pgc-w60ede8c7bff82-0-0, #panel-w60ec65848cb86-0-0-0  {
+	
+padding-left: 10px !important;
+	
+}
+
+	
+	
+}
+	@media screen and (max-width: 768px){
+	
+	ul.grid {
+  column-count: 2;
+  column-gap: 10px;
+}
+		
+	}
+
+@media screen and (max-width: 560px){
+	
+	ul.grid {
+  column-count: 1;
+  column-gap: 10px;
+}
+
+.grid-item {
+
+	width: 100% !important;
+}
+	
+}
+
+@media print {
+
+#header-bar, #header-box, #bannertop, #search-index-box, .top-bar, .title-area, 
+	
+#title-bar, #top-menu-bar, #mybreadcrumbs, #footer-box, #footerarea-sow-editor-2 div div p a {
+
+	display: none;
+
+}
+	
+	table, tr, td{
+		
+		border: 0;
+		
+	}
+	
+	hr { page-break-after: always; }
+
+}
+
+p.desc-txt {
+
+	font-size: 12px;
+
+}
+
+
+ 
+}
